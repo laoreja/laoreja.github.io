@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "XiuyeGu Launches Site"
+title: "Xiuye Gu Launches Site"
 date: 2016-11-1
 ---
 
