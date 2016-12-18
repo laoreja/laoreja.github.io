@@ -1,5 +1,69 @@
+.me {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.my_photo {
+  width: 30%;
+  float: left;
+}
+
+.my_img {
+  display: block;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.self_intro {
+  width: 70%;
+  float: left;
+}
+
+.self_intro p {
+  color: #7c7c7c;
+  font-size: 0.9em;
+  line-height: 1.9em;
+  margin: 0;
+  margin-top: 1em;
+}
+.banner {
+  background-color: #2c58ed;
+  background-size: cover;
+  min-height: 150px;
+  position: relative;
+}
+ 
+
+.space {
+  height:20px;
+}
+.space_under_banner {
+  height:50px;
+}
+.page_title_container {
+    display: table;
+    position: absolute;
+    height: 150px;
+    width: 100%;
+}
+
+.page_title_inner_container {
+    display: table-cell;
+    vertical-align: middle;
+}
+.page_title {
+  font-weight: 600;
+  color: #f5f5f5;
+  font-size: 4em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .project_row {
-padding-bottom: 30px;
+padding-bottom: 50px;
 /*Add padding between button and horizontal line*/
 border-bottom: 1px solid #eeeeee;
 /*Add horizontal line under each project row*/
@@ -29,7 +93,7 @@ border-bottom: 1px solid #eeeeee;
 .publications td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 0px solid #E1E1E1; }
+  border-bottom: 30px solid #FFFFFF; }
 
 .publications th:first-child,
 .publications td:first-child {
@@ -297,12 +361,7 @@ display: inline-block;
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
-.banner {
-    background-color: #2c58ed;
-    background-size: cover;
-    min-height: 600px;
-        position: relative;
-}
+
 .banner-info{
     background: url(../images/me.png)no-repeat 0px 0px;
     width: 500px;
@@ -694,7 +753,7 @@ img.img-responsive.glry-img {
 
 /*-- contact --*/
 .contact{
-padding:60px 0 0 0;
+padding:0 0 0 0;
 }
 .contact-info h3 {
     font-weight: 900;
@@ -923,7 +982,11 @@ color:#fff;
 	    font-size: 2.1em;
 	}
 	.banner {
-	    min-height: 500px;
+    background-color: #2c58ed;
+    background-size: cover;
+    min-height: 150px;
+    position: relative;
+}
 	}
 	.banner-info {
 	    margin: 12% auto 0;
