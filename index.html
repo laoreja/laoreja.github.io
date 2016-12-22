@@ -48,6 +48,7 @@
 		});
 	});
 </script>
+<link rel="shortcut icon" type="image/png" href="images/favicon.png">
 <!-- start-smoth-scrolling -->
 </head>
 <body>
@@ -109,10 +110,10 @@
 	</div>
 	<div class="self_intro me">
 		<p>
-			Currently, I am a senior student in Zhejiang University, majoring in computer science. I am also an undergraduate member of State Key Lab of CAD &amp; CG, Zhejiang University, under the supervision of <a href="http://www.cad.zju.edu.cn/home/dengcai/">Prof. Deng Cai</a>. In summer 2016, I spent a very happy time working under the guidance of <a href="http://www.cs.ucdavis.edu/~yjlee/">Prof. Yong Jae Lee</a> as a research intern, in UC Davis.
+			I am a senior at Zhejiang University, majoring in computer science. I am also an undergraduate member of State Key Lab of CAD &amp; CG, Zhejiang University, under the supervision of <a href="http://www.cad.zju.edu.cn/home/dengcai/">Prof. Deng Cai</a>. In summer 2016, I spent a very happy time working under the guidance of <a href="http://www.cs.ucdavis.edu/~yjlee/">Prof. Yong Jae Lee</a> as a research intern, in UC Davis.
 		</p>
 		<p style="margin-bottom:1.5em">
-			My research interests include <b>Computer Vision</b> and <b>Machine Learning</b>. Particularly, I am interested in <b>Object Detection</b> and <b>Approximate Nearest Neighbor Search</b>. Besides, I am always striving to gain a deeper understanding of <b>Deep Learning</b>.
+			I am interested in Computer Vision and Machine Learning. I want to solve high level vision problems, and I strive to gain a deeper understanding of Deep Learning. Besides, I am also interested in Approximate Nearest Neighbor Search, in the field of Information Retrieval.
 		</p>
 	</div>
 </div>
@@ -128,28 +129,51 @@
 			<h2>Research</h2>
 			<span> </span>
 		</div>
-		<div class="projects_table">
+		<div class="projects_table" id="research_table">
         	<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 				<tbody>
 					<tr>
 						<td width="25%">
-		            		<div class="two" id="ccc_image"><img src="./images/revisit.jpg" width="100%"></div>
+		            		<div class="two" id="ccc_image"><img src="./images/horse_new.png" width="100%"></div>
 			          	</td>
 						<td valign="top" width="75%">
-							<p><papertitle>A Revisit on Binary Code Learning for Large-scale Content Based Image Retrieval</papertitle></p>
-							<p>
-							Deep hashing gradually becomes a hot topic in hashing methods and it now forms a separate category of hashing methods. Under a close scrutiny, however, we noticed several common insufficiencies in most state-of-the-art deep hashing methods. Through comprehensive experiments, we empirically proved these insufficiencies and further verified the inferiority of these deep hashing methods. May be deep hashing is a promising future for hashing methods, whereas the current research results cannot prove this point and more efforts are required in this area. <!-- The research paper has been submitted to <b>CVPR 2017</b>. --> 
-							</p>
+			        		<p><papertitle>Maheen Rashid, <b>Xiuye Gu</b>, Yong Jae Lee. <em>Interspecies Knowledge Transfer for Facial Keypoint Detection.</em> The 30th IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2017. (Under review).</papertitle></p>
+			        		<br>
+			        		
+			        		<ul>
+								<li><p><b>Background:</b> <!-- Detecting pain in animals is important because pain can be indicative of disease and affects animal well being.  -->A system that automatically detects pain would lead to the timely diagnosis of illness, improving animal welfare and saving animal owners expensive medical costs. Interestingly, research in veterinary science has found that horses, mice, and sheep exhibit facial expressions of pain. For automatic detection of facial expressions of distress, a critical step is facial keypoint detection. In this paper, we tackle the problem of facial keypoint detection for animals, doing experiments on horses and sheep.</p></li>
+								<li><p><b>Motivation:</b> Directly finetuning a network trained to detect keypoints on human faces to animal faces is sub-optimal, since human and animal faces can look quite different. So we propose to first adapt the animal images to the pre-trained human detection network by correcting for the differences in animal and human face shape. Our reasoning is that this explicit adaptation handles the structural difference, and the fine-tuning can handle the style (texture) difference, because the pre-trained human facial keypoint detection network works better on more human-like animals (cats, monkeys) than on horses and sheep, which are much more different from human faces.</p></li>
+								<li><p><b>Implementation:</b> We first find the nearest human neighbors for each animal image using an unsupervised shape matching method. We use these matches to train a thin plate spline warping network to warp each animal face to look more human-like. The warping network is then jointly finetuned with a pre-trained human facial keypoint detection network using an animal dataset.</p></li>
+								<li><p><b>Brief results:</b> We demonstrate state-of-the-art results on both horse and sheep facial keypoint detection, and significant improvement over simple finetuning especially when training data is scarce.</p></li>
+								<li><p><b>Implication:</b> Our reasoning and our network structure can be further generalized to improve the performance of knowledge transfer (instead of directly fine-tuning) between two similar tasks: one is mature with large dataset, the other is a new task with limited data.</p></li>
+								<li><p><b>Miscellaneous:</b> We present a new dataset with 3900 horse facial images with facial keypoint annotations. I also implemented a facial landmark annotation tool in Python, which supports keyboard shortcuts. In this way, we can annotate images more quickly. <a href="https://github.com/laoreja/facial-landmark-annotation-tools">[code]</a> <a href="images/annotation.png">[screenshot of the tool]</a></p></li>
+			        		</ul>	
+
+			        			<!-- Our project aims to detect animal facial key points under the constraint of a small dataset. In the near future, our system can be used to detect animal expressions, such as pain, to improve animal welfare. Besides, we built a new dataset of 3900 images with horse face and facial key point annotations. The research paper has been submitted to <b>CVPR 2017</b>. Dataset will be publicly shared upon acceptance of our paper.</p> -->
+			        	
 						</td>
 					</tr>
 					<tr>
 						<td width="25%">
-		            		<div class="two" id="ccc_image"><img src="./images/horse.png" width="100%"></div>
+		            		<div class="two" id="ccc_image"><img src="./images/revisit_new.png" width="100%"></div>
 			          	</td>
 						<td valign="top" width="75%">
-			        		<p><papertitle>Interspecies Knowledge Transfer for Facial Keypoint Detection</papertitle></p>
-			        		<p>Our project aims to detect animal facial key points under the constraint of a small dataset. In the near future, our system can be used to detect animal expressions, such as pain, to improve animal welfare. Besides, we built a new dataset of 3900 images with horse face and facial key point annotations. <!-- The research paper has been submitted to <b>CVPR 2017</b>. Dataset will be publicly shared upon acceptance of our paper.</p> -->
-			        		<p>I also implemented a facial landmark annotation tool in Python, which supports keyboard shortcuts. In this way, we can annotate images more quickly. <a href="https://github.com/laoreja/facial-landmark-annotation-tools">[code]</a> <a href="images/annotation.png">[tool screenshot]</a></p>
+							<p>
+							<papertitle><b>Xiuye Gu*</b>, Chaoqi Wang*, Cong Fu, Deng Cai. <em>A Revisit on Binary Code Learning for Large-scale Content Based Image Retrieval.</em> The 30th IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2017. (Under review). *equal contribution.</papertitle>
+							</p>
+							<br>
+							<ul>
+								<li><p><b>Background:</b> There is a growing trend in using deep hashing methods for content based image retrieval (<b>CBIR</b>) systems, where hashing functions and binary codes are learnt using deep convolutional neural networks (<b>DCNN</b>) and then the binary codes are used for approximate nearest neighbor search (<b>ANNS</b>). All the existing deep hashing papers report that empirical evaluations prove their methods’ superior performance over the state-of-the-art conventional supervised and unsupervised hashing algorithms. However, we notice that these deep hashing papers have some common insufficiencies in empirically verifying the effectiveness of their methods and thus their conclusions are dubious.</p>
+								</li>
+								<li><p><b>Motivation:</b> (1) Based on these insufficiencies we noticed, we want to empirically prove them and then revised the setting. Under the revised setting, we can get a more objective evaluation of the performance of these deep hashing. (2) Beyond the submitted paper, we want to prove one thing more cogently in the near future: fully supervised hashing methods are misleading. Our reasoning is that deep learning does a great job in classification tasks; encoding the classification results could outperform these supervised hashing methods.</p></li>
+								<li><p><b>Experiments:</b> In order to make fair comparisons among different approaches, all the deep hashing models in each comparision are retrained on the same pre-trained Resnet classification model (34 layers for the datasets CIFAR-10 and MNIST, 50 layers for dataset ILSVRC-15).</p> <p>To prove the small datasets are inappropriate, we compare the deep hashing methods with a simple binary encoding scheme Classification Coding (<b>CC</b>) (for each image, we use a c-bit-long code to represent it, where c is the number of classes. Each bit in the code uniquely represents a class) on 10%-supervised CIFAR-10 and MNIST (two most commonly used datasets in deep hashing papers).</p> <p>To prove the fully supervised hashing are inappropriate, we compare the deep hashing methods (<a href="https://arxiv.org/abs/1507.00101">SSDH</a>, <a href="http://www.iis.sinica.edu.tw/~kevinlin311.tw/cvprw15.pdf">DLBHC</a>, <a href="http://www.ijcai.org/Proceedings/16/Papers/245.pdf">DPSH</a>) with a 16-bit-long Classification Random Code (<b>CRC</b>) (each class is randomly mapped to a number ranging from 0 to 2^16 − 1. More specifically, we encode the base data using ground-truth labels and encode the query data using the predicted labels obtained from the classification model, according to <a href="http://www-bcf.usc.edu/~gareth/research/picts.pdf"><em>The error coding method and picts</em></a>) on the fully-supervised ILSVRC-15.</p> <p>We then use the large ILSVRC-15 dataset, but regard only 10% of its training dataset as supervised and take time-precision curves as our evaluation metric to compare the state-of-the-art deep hashing methods with <a href="http://www.mit.edu/~andoni/LSH/">LSH</a>, <a href="http://www.cs.unc.edu/~lazebnik/publications/cvpr11_small_code.pdf">ITQ</a> and the <a href="http://www.cs.ubc.ca/research/flann/uploads/FLANN/flann_pami2014.pdf">randomized KD Tree</a> algorithm. </p></li>
+								<li><p><b>Brief results:</b> <em>CC</em> parallels with or even ourperforms these deep hashing methods on both CIFAR-10 and MNIST. <em>CRC</em> outperforms these deep hashing methods on fully-supervised ILSVRC-15. With the revised setting, empirical results reveal that the performance of these deep hashing methods are inferior to some non-deep ANNS methods.</p></li>
+								<li><p><b>Miscellaneous:</b> According to our experiments, the best one of these deep hashing methods is the simplest DLBHC. Some methods cannot converge when the code length is short and some generate binary codes that perform badly for ANNS. Actually, the pairwise or triplet ranking loss are unsuitable on large-scale datasets, since in a randomly selected small batch, the portion of pairs with same labels are really small. <p>We also presented a dataset for evaluating semi-supervised ANNS for content based image retrieval.</p></p></li>
+
+							</ul>
+<!-- 							<p>
+							Deep hashing gradually becomes a hot topic in hashing methods and it now forms a separate category of hashing methods. Under a close scrutiny, however, we noticed several common insufficiencies in most state-of-the-art deep hashing methods. Through comprehensive experiments, we empirically proved these insufficiencies and further verified the inferiority of these deep hashing methods. May be deep hashing is a promising future for hashing methods, whereas the current research results cannot prove this point and more efforts are required in this area. The research paper has been submitted to <b>CVPR 2017</b>. --> 
+							</p>
 						</td>
 					</tr>
 				</tbody>
@@ -160,7 +184,15 @@
 					<tr>
 						<td valign="top" width="75%">
 			        		<p><papertitle>EFANNA: An Extremely Fast Approximate Nearest Neighbor Search Algorithm Based on kNN Graph</papertitle></p>
-			        		<p>According to our comprehensive experiments, EFANNA is the fastest algorithm so far both on approximate nearest neighbor graph construction and approximate nearest neighbor search. A library EFANNA based on this research is released on Github. I participated in the EFANNA project: implemented several baseline algorithms and conducted the comparison experiments. <a href="https://github.com/laoreja/fast-kNN-graph-construction-with-LSH-implementation">[code]</a></p>
+			        		<br>
+			        		<ul>
+			        			<li><p><b>Background:</b> Approximate nearest neighbor (ANN) search is a fundamental problem in many areas of data mining, machine learning and computer vision. The performance of traditional hierarchical structure (tree) based methods decreases as the dimensionality of data grows, while hashing based methods usually lack efficiency in practice. Recently, the graph based methods have drawn considerable attention. The main idea is that a neighbor of a neighbor is also likely to be a neighbor, which we refer as NN-expansion. These methods construct a k-nearest neighbor (kNN) graph offline. And at online search stage, these methods find candidate neighbors of a query point in some way (e.g., random selection), and then check the neighbors of these candidate neighbors for closer ones iteratively. Despite some promising results, there are mainly two problems with these approaches: (1) These approaches tend to converge to local optima. (2) Constructing a kNN graph is time consuming.</p></li>
+			        			<li><p><b>Our approach:</b> We find that these two problems can be nicely solved when we provide a good initialization for NN-expansion. In this paper, we propose EFANNA, an extremely fast approximate nearest neighbor search algorithm based on kNN Graph. Efanna nicely combines the advantages of hierarchical structure based methods and nearest-neighbor-graph based methods.</p></li>
+			        			<li><p><b>Brief results:</b> Extensive experiments have shown that EFANNA outperforms the state-of-art algorithms both on approximate nearest neighbor search and approximate nearest neighbor graph construction. To the best of our knowledge, EFANNA is the fastest algorithm so far both on approximate nearest neighbor graph construction and approximate nearest neighbor search.</p></li>
+			        			<li><p><b>My contribution:</b> I participated in the EFANNA project, implemented several baseline algorithms, and conducted the comparison experiments. <a href="https://github.com/laoreja/fast-kNN-graph-construction-with-LSH-implementation">[code]</a></li>
+			        		</ul>
+
+			        		<!-- <p>According to our comprehensive experiments, EFANNA is the fastest algorithm so far both on approximate nearest neighbor graph construction and approximate nearest neighbor search. A library EFANNA based on this research is released on Github. I participated in the EFANNA project: implemented several baseline algorithms and conducted the comparison experiments. <a href="https://github.com/laoreja/fast-kNN-graph-construction-with-LSH-implementation">[code]</a></p> -->
 						</td>
 						<td width="25%">
 		            		<div class="two" id="ccc_image"><img src="./images/efanna.png" width="100%"></div>
@@ -168,9 +200,13 @@
 					</tr>
 					<tr>
 						<td valign="top" width="75%">
-			        		<p><papertitle>License Plate Project</papertitle></p>
-			        		<p>With proposing an iterative segmentation algorithm and subtly applying the traditional computer vision algorithms, I successfully achieved an error rate of 4% on License Plate Segementation. To boost the segmentation performance, I incorporated more robust slant and skew correction in the detection system. <a href="https://github.com/laoreja/LicensePlate">[code]</a></p>
-			        		<p>I also wrote three literature reviews on detection, segmentation, and recognition. </p>
+			        		<p><papertitle>License Plate Recognition</papertitle></p>
+			        		<br>
+			        		<ul>
+			        			<li><p><b>Background:</b> Automatic car license plate recognition systems can be very helpful in transportation management systems. However, current work on this topic still cannot reach a very high accuracy.</p></li>
+			        			<li><p><b>Method:</b> In this project, by proposing an iterative segmentation algorithm and critically integrating ideas derived from related research, I successfully achieved an error rate of 4% on License Plate Segementation. To boost the segmentation performance, I incorporated more robust slant and skew correction in the detection system. I made my system robust when the plates were incomplete, tilted, skewed, blurred by spots, or with poor illumination.<a href="https://github.com/laoreja/LicensePlate">[code]</a></p></li>
+			        			<li><p><b>Miscellaneous:</b> I also wrote three literature reviews on detection, segmentation, and recognition.</p></li>
+			        		</ul>
 						</td>
 						<td width="25%">
 		            		<div class="two" id="ccc_image"><img src="./images/plate.png" width="100%"></div>
@@ -181,33 +217,33 @@
 		</div>
 	</div>
 </div>	
+<div class="space"></div>
 
 
 
-
-<!--/contact-->
-<div class="footer">
-	<div class="copy">
-		<div class="container">
-		<p>Copyright &copy; 2016. Xiuye Gu.</p>
-   </div>
-</div>
+	<!--/contact-->
+	<div class="footer">
+		<div class="copy">
+			<div class="container">
+			<p>Copyright &copy; 2016. Xiuye Gu.</p>
+	   </div>
+	</div>
    <script type="text/javascript">
-						$(document).ready(function() {
-							/*
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear' 
-					 		};
-							*/
-							
-							$().UItoTop({ easingType: 'easeOutQuart' });
-							
-						});
-					</script>
-				<a href="#" id="toTop" style="display: block;"><span id="toTopHover"></span><span id="toTopHover"></span> <span id="toTopHover" style="opacity: 1;"> </span></a>
+		$(document).ready(function() {
+			/*
+			var defaults = {
+	  			containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+	 		};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"><span id="toTopHover"></span><span id="toTopHover"></span> <span id="toTopHover" style="opacity: 1;"> </span></a>
 </div>
 </body>
 </html>
