@@ -1,0 +1,223 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume_cmu} % Use the custom resume.cls style
+
+%\usepackage[left=0.75in,top=1in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+
+%----------------------------------------------------------------------------------------
+%	SEFL-DEFINED PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\usepackage{verbatim}
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+\usepackage{tabularx,booktabs} 
+
+%----------------------------------------------------------------------------------------
+
+\name{GU, XIUYE} % Your name
+\address{Room 201, Unit 3, Building 5, Siji Jiangnan Court \\ Jiashan, Zhejiang, 314100, P. R. China} % Your address
+\address{+86-15700080187 \\ https://laoreja.github.io \\ xiuyegu@163.com} % Your phone number and email
+
+
+\begin{document}
+% In CMU version, remove this!
+% In princeton, machine learning first.
+\begin{comment}
+\begin{rSection}{Research Interests}
+%Computer Vision, high level vision tasks, scene understanding. Machine learning, deep learning.
+\vspace{0.5em}
+\begin{rList}
+\item {\bf Computer Vision:} scene understanding and image retrieval particularly.
+\item {\bf Machine Learning:} deep learning, approximate nearest neighbor search.
+\end{rList}
+\end{rSection}
+\end{comment}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Education Background}
+
+\begin{rSubsection}{{\bf Zhejiang University}, Zhejiang, PRC}{}{Bachelor of Engineering in Computer Science expected in June 2017}{Sept. 2013 -- Present}
+\item GPA: 93/100 (3.97/4.0), the third year GPA: 94/100 (4.0/4.0); {\bf Rank 1/189}.
+\end{rSubsection}
+
+\begin{rSubsection}{{\bf University of California, Davis}, CA, USA }{}{Global Research Experience in Advanced Technologies Program}{July 2016 -- Sept. 2016}
+\item GPA: A (five letter grades).
+\end{rSubsection}
+\vspace{-0.5em}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	RUBLICATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Publications}
+\vspace{0.5em}
+\begin{rList}
+\item {\bf Xiuye Gu*}, Chaoqi Wang*, Cong Fu, Deng Cai. {\em A Revisit on Binary Code Learning for Large-scale Content Based Image Retrieval.} The $30^{th}$ IEEE Conference on Computer Vision and Pattern Recognition ({\bf CVPR}), 2017 (* indicates the co-first authorship). Under review. 
+\item Maheen Rashid, {\bf Xiuye Gu}, Yong Jae Lee. {\em Interspecies Knowledge Transfer for Facial Keypoint Detection.} The $30^{th}$ IEEE Conference on Computer Vision and Pattern Recognition ({\bf CVPR}), 2017. Under review.
+\end{rList}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Research Experience}
+
+{\bf Research Intern -- University of California, Davis} \\
+\vspace{0.5em}
+\textsl{Advisor: Prof. Yong Jae Lee} \\
+{\bf Interspecies Knowledge Transfer for Facial Keypoint Detection} \hfill \textsl{July 2016 -- Nov. 2016}\smallskip
+\begin{rList}
+\item Proposed a novel deep learning method for localizing animal facial landmarks via K nearest neighbor (kNN) search, thin plate spline warping network and fine-tuning; achieved significant improvement especially when training data are scarce.
+\item Developed the holistic system in Torch and Python; obtained reasonable baseline results. 
+\item Built a dataset with 3900 horse facial images and keypoint annotations; developed an annotation tool.
+\end{rList}
+
+
+%------------------------------------------------
+
+{\bf Undergraduate Member -- State Key Lab of CAD \& CG, Zhejiang University} \\
+\vspace{0.5em}
+\textsl{Advisor: Prof. Deng Cai} \\
+{\bf A Revisit on Binary Code Learning for \\Large-scale Content Based Image Retrieval (CBIR)} \hfill \textsl{May 2016 -- Present} \smallskip
+\begin{rList}
+\item Identified and empirically proved common insufficiencies in the experimental settings of state-of-the-art deep hashing methods.
+\item Proposed a revised experimental setting for better evaluating hashing methods for CBIR tasks and made the setting public as a new benchmark dataset.
+\item Conducted experiments under the revised setting to compare these deep hashing methods with traditional hashing and approximate nearest neighbor search algorithms.
+\item Verified and analyzed the inferiority of these deep hashing methods.
+\end{rList}
+
+%{\em Fast kNN Graph Construction with Locality Sensitive Hashing}
+{\bf EFANNA : An Extremely Fast Approximate Nearest Neighbor \\ Search Algorithm Based on kNN Graph} \hfill \textsl{Feb. 2016 -- June 2016} \smallskip
+\begin{rList}
+\item Contributed to the EFANNA open source C++ library and conducted comparison experiments.
+\item Adopted the {\em Lanczos} algorithm, the Boost and CLAPACK library to implement the {\em Anchor Graph Hashing} and {\em Fast kNN Graph Construction with Locality Sensitive Hashing} algorithms; achieved high computational efficiency. 
+\item Implemented multi-threading via OpenMP API for the EFANNA library.
+\item Developed the binary code search algorithm for the EFANNA library.
+\end{rList}
+
+
+{\bf License Plate Recognition System} \hfill \textsl{Sept. 2015 -- Feb. 2016} \smallskip
+\begin{rList}
+\item Proposed a robust iterative license plate segmentation algorithm.
+\item Designed and implemented a license plate segmentation system through combining my algorithm with traditional vision algorithms; achieved the error rate of 4\% on low resolution images.
+\item Built a license detection system with robust skew and slant correction for better segmentation results.
+%\item Built a license detection system with robust skew and slant correction to provide better source images for segmentation.
+\item Wrote three literature reviews on license plate detection, segmentation and character recognition.
+\end{rList}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Selected Projects}
+
+
+\begin{rSubsection}{{\bf Curriculum Design Projects, Zhejiang University}}{}{Team leader}{June 2014 -- June 2015}
+\item {\bf Connect Them:}  Built a novel news search engine in Python based on extensive research, which supported searching by key words \& by article, and connected semantically relevant articles; displayed the connection by charts.
+\item {\bf MiniSQL:} Designed and implemented a single-user database system in C++, comprising Buffer Manager, Record Manager, Index Manager, Catalog Manager, API, and Interpreter.
+\item {\bf ZCC:}  Developed a C compiler in Python, which featured compiler optimizations and error handling \& recovery; made it generate X86 assembly (runnable on real computers; no need for virtual machines).
+\end{rSubsection}
+
+
+
+\begin{rSubsection}{{\bf Student Research and Training Program (SRTP), Zhejiang University}}{}{Co-developer; Advisor: Prof. Xiaogang Jin}{March 2015 -- Nov 2016}
+% Information Subscription
+\item Developed Influx, an Android application, which featured a self-defined subscription function, allowing users to select and add any list-like sections on web pages to their home-made news library.
+%\item Utilized open source projects, EventBus, greenDAO, and JSoup, to check the updates of the chosen sections and notify users.
+\end{rSubsection}
+ 
+
+
+\begin{rSubsection}{{\bf Computer Hardware Interest Group, Zhejiang University}}{}{Member; Instructor: Prof. Qingsong Shi}{\hspace*{\fill} March 2014 -- Sept. 2015}
+\item {\bf Mine Sweeper on FPGA board}: Utilized logical circuit design to develop a salute to the classic mine sweeper game in Verilog HDL, using VGA display.
+\item {\bf Single-cycle and Multi-cycle CPU on FPGA board}: Designed and implemented a single-cycle and a multi-cycle CPU with 23 basic MIPS instructions through schematic design and Verilog HDL.
+\item {\bf 5-stage pipelined CPU on FPGA board}: Designed and implemented forwarding paths, branch `predict-not-taken', and interrupts in my pipelined CPU with 18 MIPS instructions.
+\end{rSubsection}
+
+
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	HONORS AND AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Selected Honors \& Awards}
+\vspace{0.5em}
+\begin{rList}
+\item National Scholarship in China ({\bf 1.5\%})									\hfill 2015, 2016
+\item First-Class Scholarship for Outstanding Students ({\bf 3\%})                  				\hfill 2015, 2016
+\item First-Class Scholarship for Outstanding Merits ({\bf 3\%})                  					\hfill 2015, 2016
+\item HE Zhijun Scholarship {\tiny (Highest  scholarship in the College of Computer Science \& Technology, Zhejiang University.)} \hfill 2016
+%\item Second-Class Scholarship for Outstanding Students ({\bf 8\%})                       			\hfill 2014
+%\item Second-Class Scholarship for Outstanding Merits ({\bf 8\%})                       			\hfill 2014                         
+%\item Honorable Mention, Interdisciplinary Contest in Modeling Contest					\hfill 2016
+%\item $2^{nd}$ Prize, Collegiate Advanced Higher Mathematics Contest of Zhejiang Province    \hfill 2014  
+\item Excellent Student Awards                     						\hfill 2014
+\end{rList}
+\end{rSection}
+
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills \& Hobbies}
+%\hspace*{5em}
+\vspace{0.5em}
+\begin{rList}
+\item {\bf Hacking Skills:} Caffe, Torch, OpenCV, Python, C/C++, Matlab, Shell Script, Javascript, \LaTeX, HTML/CSS, SQL.
+%\item {\bf Frameworks \& Libraries:} Caffe, Torch, OpenCV, Flann, Boost.
+%\item {\bf Miscellaneous:} HTML/CSS, SQL, \LaTeX.
+\item {\bf Test Scores:} TOEFL - 110, GRE - {\bf Verbal 166}, Quantitative 168, Analytical Writing 4.0.
+\item {\bf Hobbies:} Mathematics, Literature, Traveling, Ping Pong, Painting, Piano.
+\end{rList}
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	Extra-Curricular SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Extra-Curricular}
+
+\vspace{0.5em}
+\begin{rList}
+\item {\bf Debate Team of School of Medicine:} Participated in the Newborn Cup Debate Competition and the Qizhen Cup Debate Competition.
+\item {\bf Investigation on the National Intangible Cultural Inheritance--Northeast Errenzhuan:} Conducted field study of Errenzhuan and proposed new ways for its inheritance and promotion.
+\item {\bf Member of Student Association of Science and Technology:} Managed the online GEEK station, GEEK*ZJU.
+\end{rList}
+
+\end{rSection}
+
+
+\end{document}
