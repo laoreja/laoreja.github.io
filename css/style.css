@@ -89,9 +89,9 @@
   font-size: 1.2em;
   /* currently ems cause chrome bug misinterpreting rems on body element */
   /*line-height: 1.8;*/
-  font-weight: 300;
-  font-family: "Lato", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222;
+/*  font-weight: 300;*/
+/*  font-family: "Lato", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+/*  color: #222;*/
 }
 
 .publications p{
@@ -934,15 +934,19 @@ color:#fff;
   margin-top: 50px;
 }
 /*-- contact --*/
+.hfill {
+display: flex;
+justify-content: space-between;  
+}
 /*--footer--*/
 .copy {
-    background: #2c58ed;
+/*    background: #2c58ed;*/
     padding: 2em 0;
     text-align: center;
 }
 .copy p {
     font-size: 1em;
-    color: #fff;
+/*    color: #fff;*/
     font-weight: 500;
 }
 .copy p a {
